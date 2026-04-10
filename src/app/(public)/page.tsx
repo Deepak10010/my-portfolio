@@ -22,7 +22,7 @@ export default async function HomePage() {
         <section className="py-24 md:py-32">
           <p className="mb-3 text-sm text-muted-foreground">Hi, I&apos;m</p>
           <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl">
-            Deepak Dodera
+            Deepak Doddera
           </h1>
           <p className="mb-8 max-w-xl text-xl text-muted-foreground">
             A software developer building things for the web.
