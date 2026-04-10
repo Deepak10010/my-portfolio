@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Navbar from "@/components/Navbar";
 import BlogCard from "@/components/BlogCard";
 import { Separator } from "@/components/ui/separator";

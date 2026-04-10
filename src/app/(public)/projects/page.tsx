@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 import { prisma } from "@/lib/prisma";
