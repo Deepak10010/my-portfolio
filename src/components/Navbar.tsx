@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
         <Link href="/" className="text-base font-bold tracking-tight">
-          Deepak Dodera
+          Deepak Doddera
         </Link>
         <div className="flex items-center gap-1">
           <ul className="flex items-center">
