@@ -38,13 +38,13 @@ export default async function HomePage() {
               </Button>
             </div>
           </div>
-          <div className="relative mx-auto h-48 w-48 overflow-hidden rounded-full border-4 border-border shadow-lg md:h-64 md:w-64">
+          <div className="relative mx-auto h-64 w-64 overflow-hidden rounded-full border-4 border-border shadow-xl md:h-96 md:w-96">
             <Image
               src="/profile.jpg"
               alt="Deepak Doddera"
               fill
               priority
-              sizes="(max-width: 768px) 192px, 256px"
+              sizes="(max-width: 768px) 256px, 384px"
               className="object-cover"
             />
           </div>
