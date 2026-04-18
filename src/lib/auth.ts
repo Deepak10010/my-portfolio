@@ -1,4 +1,4 @@
-import { NextAuthOptions } from "next-auth";
+import { NextAuthOptions, getServerSession } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 export const authOptions: NextAuthOptions = {
@@ -24,3 +24,8 @@ export const authOptions: NextAuthOptions = {
   pages: { signIn: "/login" },
   secret: process.env.NEXTAUTH_SECRET,
 };
+
+export async function isAdmin() {
+  const session = await getServerSession(authOptions);
+  return !!session && session.user?.email === process.env.ADMIN_EMAIL;
+}

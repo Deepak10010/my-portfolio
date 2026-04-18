@@ -9,7 +9,9 @@ export default async function AdminLayout({
   children: React.ReactNode;
 }) {
   const session = await getServerSession(authOptions);
-  if (!session) redirect("/login");
+  if (!session || session.user?.email !== process.env.ADMIN_EMAIL) {
+    redirect("/login");
+  }
 
   return (
     <div className="min-h-screen bg-background">
